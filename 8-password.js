@@ -12,7 +12,6 @@ function encrypt(word){
     newArray[2] = array.at(-1);
     newArray[3] = array [2];
     newArray[4] = array [1];
-    console.log(newArray);
     array.splice(-2, 1);
     array.splice(-1, 1);
     array.splice(2, 1);
