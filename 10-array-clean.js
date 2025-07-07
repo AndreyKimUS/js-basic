@@ -8,10 +8,10 @@ function checkElem(elem){
 }
 
 function cleanArr (array, func){
-    let innerArr = array;
-    for (let i = innerArr.length - 1; i >= 0; i--){
-        if (func(innerArr[i]) == true){
-            innerArr.splice(i, 1);
+    let innerArr = [];
+    for (let i = array.length - 1; i >= 0; i--){
+        if (func(array[i]) == true){
+            innerArr.push(array[i]);
         }
     }
     return innerArr;
