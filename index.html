@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="5-languages.js"></script>
-    <script src="6-driver.js"></script>
-    <script src="lesson.js"></script>
-    <script src="7-converter.js"></script>
-    <script src="8-password.js"></script>
-    <script src="9-sort-loops.js"></script>
-    <script src="10-array-clean.js"></script>
-    <script src="11-date-array.js"></script>
+    <link rel="stylesheet" href="/styles.css" />
 </head>
-<body>
+
+<body style="background-color: #a09cb5; text-align: center">
+    <img src="./logo.svg" alt="" />
+    <div class="panel">Калькулятор</div>
+    <input class="input" id="first-operator"/>
+    <input class="input" id="second-operator"/>
+    <button class="button" id="increment" onclick="submitForm(id)">Сложение</button>
+    <button class="button" id="decrement" onclick="submitForm(id)">Вычитание</button>
+    <button class="button" id="multiplication" onclick="submitForm(id)">Умножение</button>
+    <button class="button" id="divide" onclick="submitForm(id)">Деление</button>
+    <div class="panel" id="result">Здесь будет результат</div>
     
+    <script src="./app.js"></script>
 </body>
+
 </html>
